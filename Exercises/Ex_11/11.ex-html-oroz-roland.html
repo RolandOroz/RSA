@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Obrazec</title>
+        <style>
+            #button_1, #button_2 {
+                width: 50%;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Prijavnica</h1>
+        <form>
+            <table>
+                <tr>
+                    <td><label>Ime:</label></td>
+                    <td><input type="text" /></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>Priimek:</label></td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td><label>Spol:</label></td>
+                    <td><label><input type="radio" />Mo&scaron;ki</label><label><input type="radio" />Ženski</label></td>
+                </tr>
+                <tr>
+                    <td><label>Opis:</label>
+                    </td>
+                    <td>
+                        <textarea name="opis" rows="5" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Plačilo:</label></td>
+                    <td>
+                        <input type="checkbox" name="" value="" /> EUR<br />
+                        <input type="checkbox" name="" value="" /> USD<br />
+                        <input type="checkbox" name="" value="" /> GBP<br />
+                        <input type="checkbox" name="" value="" /> CHF<br />
+                        <input type="checkbox" name="" value="" /> HRK<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Država:</label></td>
+                    <td>
+                        <select name="država" size="1">
+                            <option value="slo" selected="selected">Slovenija</option>
+                            <option value="au">Avstrija</option>
+                            <option value="d">Nemčija</option>
+                            <option value="gb">Velika Britanija</option>
+                            <option value="usa">ZDA</option>
+                            <option value="cro">Hrva&scaron;ka</option>
+                            <option value="ch">&Scaron;vica</option>
+                        </select>
+                    </td>
+            </table>
+            <div  id="button_1">
+                <button>Po&scaron;lji prijavo</button>
+            </div>
+            <div id="button_2">
+                <button>Počisti prijavo</button>
+            </div>
+        </form>
+    </body>
+</html>
