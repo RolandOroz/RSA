@@ -1,0 +1,30 @@
+p{
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    line-height: 1.5em;
+}
+h1,h2{
+    font-family: "Arial Black", sans-serif;
+    color: #0182FB;
+    text-shadow: #AFAFAF 2px 2px 3px;
+    font-variant: small-caps;
+}
+pre{
+    padding: 5px;
+    border: 1px solid #AEAEAE;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+.koda{
+    font-family: "Courier New", "Lucida Console", "Lucida Sans Typewriter", Monaco, monospace;
+    color: #CA5801;
+    padding: 0 3px;
+    text-shadow: 1px 1px 1px #EFEFEF;;
+}
+.okvir{
+    background-color: rgba(150,150,150,0.20);
+    padding: 10px;
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(220,220,220,1.00);
+    box-shadow: 3px 3px 3px 3px rgba(220,220,220,1.00);
+    border: 1px rgba(190,190,190,1.00) solid;
+    border-radius: 5px;
+}

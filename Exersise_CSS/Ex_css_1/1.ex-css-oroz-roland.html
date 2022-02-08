@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="web, html, css">
+    <meta name="author" content="Roland Oroz">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        h1{
+            background-color: rgba(252,172,0,0.40);
+            padding: 3px;
+            text-align: center;
+            border-bottom: solid 2px rgba(252,172,0,0.60);
+        }
+    </style>
+    <title>01: Vključitev CSS</title>
+</head>
+<body>
+<article>
+    <h1>Vključitev slogovne predloge</h1>
+    <p>Slogovno predlogo lahko v spletni dokument vključimo na tri načine:</p>
+    <ul>
+        <li>kot zunanjo slogovno predlogo,</li>
+        <li>kot notranjo slogovno predlogo,</li>
+        <li>kot slog znotraj oznake oz. značke.</li>
+    </ul>
+    <h2>Zunanja predloga</h2>
+    <p>Slogovno predlogo povežemo z HTML-dokumentom tako,
+        da v glavi (<span class="koda">&lthead&gt</span>) HTMLdokumenta uporabimo
+        element link.
+    </p>
+    <p class="koda">&ltlink rel="stylesheet" type="text/css" href="../../css/vaje/MojSlog.css" /&gt</p>
+
+</article>
+
+</body>
+</html>
+
+
+
+
+
+    Uporabimo lastnosti:
+    rel="stylesheet" (določa odvisnost na slogovno predlogo),
+    type="text/css" (vrsta dokumenta je besedilna datoteka, ki vsebuje CSS-pravila),
+    href="MojSlog.css" (referenca na dokument, ki vsebuje slogovno predlogo).
+
+    Če je potrebno spremeniti obliko, potem spremenimo le vsebino slogovne datoteke (v zgornjem primeru MojSlog.css). Tako enostavno dobimo nov izgled vseh dokumentov, ki so povezani na to datoteko (npr. v podjetjih, ki zahtevajo enoten izgled spletnih strani v svojih enotah). V tem primeru se lahko iz dokumenta HTML sklicujemo na dokument CSS. Brskalnik dobi lastnosti iz datoteke s slogom in jih priredi pripadajočim oznakam oz. značkam v dokumentu.
+
+    Zunanjo slogovno predlogo lahko napišemo v kateremkoli urejevalniku besedil, obstajajo pa tudi programi za pisanje in preverjanje slogovnih predlog (tekstovni in grafični), ki nam le-te pomagajo napisati v krajšem času. Slogovna predloga naj ne vsebuje ukazov HTML, saj lahko pride do napak. Slogovno datoteko shranimo v datoteko s končnico "*.css".
+    Notranja slogovna predloga
+
+    Notranja slogovna predloga pripada le tistemu dokumentu, v katerem je zapisana. Določimo jo v glavi dokumenta z uporabo elementa style. Primer:
+    ...
+    <head>
+        <style type="text/css">
+            hr {color: yellow}
+            p {margin-left: 20px}
+            body {background-image: url("slike/ozadje.gif")}
+        </style>
+    </head>
+    ...

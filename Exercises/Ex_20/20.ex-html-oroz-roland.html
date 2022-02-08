@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="web, html, css, table">
+    <meta name="author" content="Roland Oroz">
+    <title>20. vaja: Zahtevnejše tabele</title>
+    <style>
+        .spBasketball th, .spBasketball thead {
+            border: transparent solid 1px;
+        }
+        .spBasketballBorder, .spBasketball, .spBasketball tr,.spBasketball td {
+            border: black solid 1px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Svetovno prvenstvo v košarki
+        </h1>
+        <h3>Španija 2014</h3>
+        <div class="smallTable">
+            <table class="smallTableDisp">
+                <tr>
+                    <td>Dominikanska republika</td>
+                    <td>:</td>
+                    <td>Slovenija</td>
+                </tr>
+                <tr>
+                    <td>61</td>
+                    <td>:</td>
+                    <td>71</td>
+                </tr>
+            </table>
+        </div>
+        <div class="bigTable">
+            <caption class="statistika" style="text-align: center"><h5><em>Statistika</em></h5></caption>
+            <div class="spBasketballBorder">
+            <table class="spBasketball">
+                <thead>
+                <th style="border: black solid 1px; colspan="3">Igralec</th>
+                    <th style="border: black solid 1px; colspan="5">Točke</th>
+                    <th style="border: black solid 1px;" colspan="9">Skoki</th>
+                </thead>
+                <tr>
+                <th style="text-align: center">#</th>
+                <th>Priimek</th>
+                <th>Ime</th>
+                    <th>Min</th>
+                    <th>Met</th>
+                    <th>2pts</th>
+                    <th>3pts</th>
+                    <th>N</th>
+                    <th>O</th>
+                    <th>Sk</th>
+                    <th>As</th>
+                    <th>On</th>
+                    <th>Pn</th>
+                    <th>Už</th>
+                    <th>Bl</th>
+                    <th>Točke</th>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>BALAŽIČ</td>
+                    <td>Jaka</td>
+                    <td>14:09</td>
+                    <td>1/6</td>
+                    <td>0/1</td>
+                    <td>1/5</td>
+                    <td>4/4</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>7</td>
+                </tr>
+
+            </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+ Igralec 	Točke 	Skoki
+#	Priimek 	Ime 	Min 	Met 	2t 	3pts 	Pm 	N 	O 	Sk	As 	On 	Pn 	Už 	Bl 	Točke
+
+Statistika
+4 	BALAŽIČ 	Jaka 	14:09 	1/6 	0/1 	1/5 	4/4 	2 	2 	4 	0 	4 	1 	0 	0 	7
+5 	SLOKAR 		Uroš 	32:14 	4/9 	3/8 	1/1 	0/0 	0 	6 	6 	0 	2 	0 	2 	0 	9
+6 	NIKOLIĆ 	Aleksej - 	- 	- 	- 	- 	- 	- 	- 	- 	- 	- 	- 	- 	-
+7 	PREPELIČ	Klemen 	15:07 	2/4 	1/1 	1/3 	0/0 	0 	1 	1 	0 	0 	0 	0 	0 	5
+8 	MURIĆ 		Edo 	10:10 	0/2 	0/1 	0/1 	0/0 	2 	3 	5 	0 	2 	3 	0 	0 	0
+9 	BLAŽIČ 		Jaka 	02:06 	1/1 	1/1 	0/0 	0/0 	0 	0 	0 	0 	2 	0 	0 	0 	2
+10 	ZUPAN 		Miha 	17:32 	1/3 	0/0 	1/3 	0/0 	1 	3 	4 	2 	4 	1 	0 	0 	3
+11 	DRAGIĆ 		Goran 	26:58 	6/12 	6/8 	0/4 	0/0 	0 	2 	2 	6 	3 	6 	1 	0 	12
+12 	DRAGIĆ 		Zoran 	32:14 	8/15 	6/10 	2/5 	0/2 	0 	3 	3 	1 	2 	1 	4 	1 	18
+13 	LORBEK 		Domen 	28:55 	2/4 	2/3 	0/1 	4/4 	0 	1 	1 	2 	1 	0 	0 	0 	8
+14 	KLOBUČAR	Jaka 	13:02 	2/5 	2/2 	0/3 	1/2 	0 	1 	1 	1 	1 	1 	0 	0 	5
+15 	OMIĆ 		Alen 	07:33 	1/3 	1/3 	0/0 	0/0 	1 	1 	2 	0 	3 	3 	0 	0 	2
+
+Skupaj: 			200 	28/64 	22/38 	6/26 	9/12 	6 	23 	29 	12 	24 	16 	7 	1 	71
+
+
+LEGENDA:
+#: Številka dresa
+Min: Igralni čas
+Met: Met skupaj
+2t: Met za 2 točki
+3t: Met za 3 točke
+Pm: Prosti meti
+N: Offensive rebounds
+O: Defensive rebounds
+Sk: Vsi skoki
+As: Asistence
+On: Osebne napake
+Pn: Proti napadi
+Už: Ukradene žoge
+Bl: Blokade
