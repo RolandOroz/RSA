@@ -1,0 +1,17 @@
+h1 {
+    color: #2225ff;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+}
+p {
+    font-family: Georgia, serif;
+}
+.header {
+    color: #ff8224;
+    font-weight: bold;
+    font-variant: all-small-caps;
+}
+.italic {
+    font-style: italic;
+    line-height: 1px;
+}
