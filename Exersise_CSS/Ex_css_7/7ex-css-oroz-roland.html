@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="web, html, css">
+    <meta name="author" content="Roland Oroz">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Open+Sans&display=swap');
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+        h1 {
+            color: orangered;
+        }
+        p {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+        ul {
+            padding-top: 5px;
+            text-indent: 3px;
+            margin-top: 25px;
+        }
+
+        .marginBox {
+            color: #a06700;
+            margin: 20px 0px 20px 0px;
+            padding: 10px 20px 20px 20px;
+            background-color: #e90;
+        }
+
+        .borderBox {
+            margin: 10px 20px 20px 20px;
+            padding: 5px 10px 10px 10px;
+            background-color: #f4bb55;
+        }
+
+        .paddingBox {
+            margin: 5px 10px 10px 10px;
+            padding: 10px 20px 20px 20px;
+            background-color: #f9ddaa;
+        }
+
+        .elementBox {
+            margin: 20px;
+            padding: 20px 20px 20px 20px;
+            background-color: #fff;
+        }
+
+        .orangeText {
+            color: orangered;
+            font-family: "Courier New", monospace;
+        }
+    </style>
+    <title>07: Odmiki</title>
+</head>
+<body>
+<article>
+    <h1>Zunanji in notranji odmiki</h1>
+    <p>Zunanje in notranje odmike lahko priredimo kateremukoli elementu. Z lastnostjo <span class="orangeText">margin</span> določimo
+        velikosti zunanjih odmikov, z lastnostjo <span class="orangeText">padding</span> pa notranje odmike na vseh štirih straneh elementa.
+        Za vrednost navedemo vsaj eno in največ štiri vrednosti:
+    </p>
+    <ul>
+        <li>če navedemo 1 vrednost, velja za vse štiri robove</li>
+        <li>če navedemo 2 vrednosti, velja prva za zgornji in spodnji, druga pa za levi in desni rob</li>
+    </ul>
+    <ul>
+        <li>če navedemo 3 vrednosti, velja prva za zgornji, druga za levi in desni, tretja pa za spodnji rob</li>
+        <li>če navedemo 4 vrednosti, velja prva za zgornji, druga za desni, tretja za spodnji in četrta za levi rob</li>
+    </ul>
+    <p>Zunanji in notranji odmiki:</p>
+    <div class="marginBox">Zunanja obroba okvirja (marginBox)
+        <div class="borderBox">Obroba okvirja (borderBox)
+            <div class="paddingBox">Notranji odmik okvirja (paddingBox)
+                <div class="elementBox">Element okvirja (elementBox)</div>
+            </div>
+        </div>
+    </div>
+
+
+
+</article>
+
+
+</body>
+</html>
