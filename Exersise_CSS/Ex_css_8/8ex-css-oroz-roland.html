@@ -17,11 +17,39 @@
             color: #ff0000
         }
 
-        p.podnaslov {
+        h4.podnaslov {
+            font-variant: petite-caps;
+            text-decoration-line: underline ;
+            text-decoration-style: dashed;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #606060;
+        }
+        a {
+            text-decoration-line: none;
+            margin-left: 3px;
+            padding-left: 15px;
+        }
+
+        a:link {
+            color: #008000;
+        }
+        a:hover {
+            text-decoration-line: underline;
+            color: #ff6600;
+            background-image: url("pictures/oznaka.png");
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+        a:visited {
+            color: #9a9a9a;
+        }
+        a:active {
+            font-weight: bold;
             text-decoration: underline;
-            text-decoration: dotted;
-            text-decoration-color: #606060 ;
-            color: orangered;
+            color: #ff6600;
+            background-image: url("pictures/oznaka.png");
+            background-repeat: no-repeat;
+            background-position: left;
         }
 
     </style>
@@ -32,25 +60,25 @@
         <h1>Aktivno besedilo v HTML dokumentih</h1>
     </div>
     <div>
-        <p class="podnaslov">Seznam izdelanih vaj:</p>
+        <h4 class="podnaslov">Seznam izdelanih vaj:</h4>
         <div>
-            <a href="..\Ex_1\1.vaja-html-oroz-roland.html">Prva stran</a>
+            <a href="..\..\Exercises\Ex_1\1.vaja-html-oroz-roland.html">Prva stran</a>
         </div>
         <div>
-            <a href="..\Ex_2\2.Ex-html-oroz-roland.html">Odstavki in naslovi</a>
+            <a href="..\..\Exercises\Ex_2\2.Ex-html-oroz-roland.html">Odstavki in naslovi</a>
         </div>
         <div>
-            <a href="..\Ex_3\3.Ex-html-oroz-roland.html">Urejeni odstavki</a>
+            <a href="..\..\Exercises\Ex_3\3.Ex-html-oroz-roland.html">Urejeni odstavki</a>
         </div>
         <div>
-            <a href="..\Ex_4\4.Ex-html-oroz-roland.html">Oblikovanje besedila</a>
+            <a href="..\..\Exercises\Ex_4\4.Ex-html-oroz-roland.html">Oblikovanje besedila</a>
         </div>
         <div>
-            <a href="..\Ex_5\5.Ex-html-oroz-roland.html">Povezave</a>
+            <a href="..\..\Exercises\Ex_5\5.Ex-html-oroz-roland.html">Povezave</a>
         </div>
     </div>
     <div>
-        <p class="podnaslov"><strong>Povezave na strani v internetu:</strong></p>
+        <h4 class="podnaslov">Povezave na strani v internetu:</h4>
         <div>
             <a href="http://www.w3.org/TR/html5/">W3C</a>
         </div>
