@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="web, html, css">
+    <meta name="author" content="Roland Oroz">
+    <style>
+        body {
+            margin: 20px;
+        }
+        p, h1 {
+            font-family: "Open Sans",sans-serif;
+            text-align: justify;
+            line-height: 1.3em;
+        }
+        h1 {
+            color: #996600;
+        }
+        .oznaka {
+            color: gray;
+            font-family: Consolas, "Courier New", monospace;
+            font-style: italic;
+        }
+
+        img.rightPicture {
+            float: right;
+            margin: 5px 0px 5px 10px;
+        }
+
+        img.leftPicture {
+            float: left;
+            margin: 0px 10px 10px 0px; /*v nalogi so napačne koordinate*/
+            padding: 10px 0 0 10px;
+
+        }
+        .leftImgShadow {
+            float: left;
+            background-image: url("pictures/senca.png");
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            background-size: 264px 223px;
+            border: 1px solid #ccc;
+        }
+        /*.box-shadow {*/
+        /*    float: left;*/
+        /*    width: 250px;*/
+        /*    height: 210px;*/
+        /*    margin: 5px 10px 5px 0;*/
+        /*    padding: 12px;*/
+        /*}*/
+
+    </style>
+    <title>09: Slika ob besedilu</title>
+</head>
+<body>
+    <article>
+        <h1>Poravnava slike ob besedilu</h1>
+
+        <img class="rightPicture" src="pictures/obala.jpg" alt="beach">
+
+        <p>Z oblikovno lastnostjo <span class="oznaka">float</span> lahko element prestavimo na levi ali desni rob.
+            Pri tako postavljenem elementu se vsebina drugih elementov odmika od njegovih robov. V tem se tudi
+            razlikuje od absolutne postavitve, kjer se vsebina drugih elementov ne odmika.
+        </p>
+        <p>Z oblikovno lastnostjo <span class="oznaka">background-image</span> določimo sliko v ozadju kateregakoli elementa. Za ozadje običajno
+            izberemo sliko, ki je primerna za tlakovanje. Takšna slika ne sme biti preveč moteča, stiki med več
+            enakimi slikami pa morajo biti skoraj neopazni. Slika mora biti oblike GIF, JPG ali PNG.
+        </p>
+        <p>Poleg slike v ozadju lahko elementu določimo tudi barvo ozadja. Čeprav se to na prvi pogled ne zdi smiselno
+            početje, se lahko pripeti, da brskalnik slike iz takega ali drugačnega razloga ne more naložiti. V tem
+            primeru bo ozadje obarval. Tudi na sami sliki bi lahko imeli prosojne dele, skozi katere bi se videla
+            barva ozadja.
+        </p>
+
+        <div class="box-shadow"><div class="leftImgShadow">
+            <img class="leftPicture" src="pictures/matterhorn.jpg">
+        </div></div>
+            <p>Če za ozadje elementa izberemo sliko, lahko z lastnostjo <span class="oznaka">background-attachment</span> določimo, kaj se bo dogajalo
+                z ozadjem, ko se bomo premikali po besedilu (z drsnikom ali kako drugače).
+            </p>
+
+        <p>Če za ozadje elementa izberemo sliko, lahko lastnostjo <span class="oznaka">background-position</span> določimo položaj slike znotraj
+            elementa. Tako postavljena slika je potem osnova za morebitno tlakovanje. Za vrednost te lastnosti običajno
+            navedemo dve vrednosti, ki ju ločimo s presledkom: prva vrednost določa vodoraven položaj slike znotraj
+            elementa, druga vrednost določa navpičen položaj slike znotraj elementa.
+        </p>
+    </article>
+
+</body>
+</html>
+
+<!--
+
+
+-->
